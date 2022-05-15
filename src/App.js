@@ -18,6 +18,7 @@ function App() {
     <div className="App">
       <h1 className="p-5">Cart</h1>
       <ListGroup as="ol" numbered className="m-5">
+        
         {
           cart.map(product => (
               <ListGroup.Item
