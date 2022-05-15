@@ -18,7 +18,7 @@ spec:
         app: e-commerce-cart
     spec:
       containers:
-        - image: aflal/e-commerce-cart:v1
+        - image: aflal/e-commerce-cart:97466560a8910992a1e17c6c9ff8996f7a5d309e
           name: e-commerce-cart-container
           imagePullPolicy: Always
           ports:

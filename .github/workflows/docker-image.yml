@@ -53,3 +53,9 @@ jobs:
     - name: Publish
       run: |-
         docker push "aflal/$IMAGE:$GITHUB_SHA"
+
+    # Deploy the Docker image to the GKE cluster
+    - name: Deploy
+      run: |-
+        kubectl set image deployment e-commerce-cart e-commerce-cart-container=aflal/$IMAGE:$GITHUB_SHA
+      
